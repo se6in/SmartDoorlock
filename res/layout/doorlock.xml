@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".registerActivity"
+    android:layout_weight="3"
+    >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="스마트 도어락"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_weight="0"></TextView>
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/img_doorlock"
+        android:layout_weight="1"></ImageView>
+
+    <TextView
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_main_id"
+        android:layout_weight="0"/>
+
+    <Button
+        android:id="@+id/door_btn"
+        android:text="문 열림"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@android:color/holo_blue_light"
+        />
+    <Button
+        android:id="@+id/memo_btn"
+        android:text="메모장 관리"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_orange_light"
+        />
+    <Button
+        android:text="로그아웃"
+        android:id="@+id/back_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@android:color/holo_green_light"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/textView_main_result"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

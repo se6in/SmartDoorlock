@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:layout_margin="10sp"
+    >
+
+    <TextView
+        android:id="@+id/txtcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:singleLine="true"
+        android:text="여기는 내용을 출력합니다.여기는 내용을 출력합니다."
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtwdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtcontent"
+        android:padding="10sp"
+        android:text="2022/06/09 09:54:02"
+        android:textColor="#FFEB3B"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/btndel"
+        android:layout_width="67dp"
+        android:layout_height="81dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/memo_ic_delete" />
+
+    <ImageView
+        android:id="@+id/btnupdate"
+        android:layout_width="65dp"
+        android:layout_height="71dp"
+        android:layout_below="@id/txtcontent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/memo_ic_modify" />
+</RelativeLayout>

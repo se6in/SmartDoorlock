@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".memo_MainActivity">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#83F7F3F3"></ListView>
+
+    <ImageView
+        android:id="@+id/memo_back_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20sp"
+        android:backgroundTint="#FFEB3B"
+        android:clickable="true"
+        android:src="@drawable/memo_ic_back" />
+
+    <ImageView
+        android:id="@+id/btnwrite"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30sp"
+        android:layout_marginBottom="20sp"
+        android:backgroundTint="#FFEB3B"
+        android:clickable="true"
+        android:src="@drawable/memo_ic_create" />
+
+    <ImageView
+        android:id="@+id/btn_display"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="180dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20sp"
+        android:backgroundTint="#FFEB3B"
+        android:clickable="true"
+        android:src="@drawable/memo_ic_modify" />
+
+    <TextView
+        android:id="@+id/textView_main_result1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="1"
+        android:visibility="invisible" />
+
+</RelativeLayout>
